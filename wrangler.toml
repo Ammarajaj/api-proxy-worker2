@@ -1,0 +1,10 @@
+name = "ai-proxy-worker"
+main = "src/index.js"
+compatibility_date = "2024-05-01"
+
+[vars]
+SECRET_KEY = "Ammarajajhvtas192005*"
+
+[[ai]]
+binding = "AI"
+
