@@ -1,10 +1,11 @@
-# ✂️ --- استبدل محتوى wrangler.toml بهذا الكود المصحح --- ✂️
 name = "ai-proxy-worker"
 main = "src/index.js"
 compatibility_date = "2024-05-01"
 
 [vars]
-SECRET_KEY = "Ammarajajhvtas192005*"
+# استخدم نفس كلمة السر القوية التي اخترتها من قبل
+SECRET_KEY = "YOUR_STRONG_PASSWORD"
 
-[ai]
-binding = "AI"
+[[services]]
+binding = "AI_WORKER"
+service = "actual-ai-worker-ammar" # <-- تأكد من أن هذا هو اسم الـ Worker الصحيح
