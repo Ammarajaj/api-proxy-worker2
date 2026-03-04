@@ -1,11 +1,9 @@
-name = "ai-proxy-worker"
+name = "ai-super-worker" # اسم جديد لتجنب أي تداخل
 main = "src/index.js"
 compatibility_date = "2024-05-01"
 
 [vars]
-# استخدم نفس كلمة السر القوية التي اخترتها من قبل
-SECRET_KEY = "Ammarajajhvtas192005*"
+SECRET_KEY = "YOUR_STRONG_PASSWORD" # اختر كلمة سر قوية
 
-[[services]]
-binding = "AI_WORKER"
-service = "actual-ai-worker-ammar" # <-- تأكد من أن هذا هو اسم الـ Worker الصحيح
+[ai]
+binding = "AI" # <-- هذا هو الربط المباشر
